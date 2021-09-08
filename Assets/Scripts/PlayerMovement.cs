@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
+	private Animator anim;
 	public float speed = 5;
 	public float horizontalSpeed = 2;
 	float horizontalInput;
@@ -20,11 +21,18 @@ public class PlayerMovement : MonoBehaviour {
 		GameObject player = GameObject.Find("Player");
 		Rigidbody playerBody = player.GetComponent<Rigidbody>();
 		playerBody.MovePosition(playerBody.position + forwardMove + horizontalMove);
+		anim.SetInteger("AnimationPar", 1);
 	}
 
 	public void Update() {
 
 		// Get the horizontal input of the keyboard
 		horizontalInput = Input.GetAxis("Horizontal");
+	}
+
+	public void Start(){
+		GameObject player = GameObject.Find("Player");
+		anim = player.GetComponentInChildren<Animator>();
+		Debug.Log(anim);
 	}
 }
