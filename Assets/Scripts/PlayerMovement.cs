@@ -19,9 +19,11 @@ public class PlayerMovement : MonoBehaviour {
 
 		// Get the rigid body and move it
 		GameObject player = GameObject.Find("Player");
-		Rigidbody playerBody = player.GetComponent<Rigidbody>();
-		playerBody.MovePosition(playerBody.position + forwardMove + horizontalMove);
-		anim.SetInteger("AnimationPar", 1);
+		if(player){
+			Rigidbody playerBody = player.GetComponent<Rigidbody>();
+			playerBody.MovePosition(playerBody.position + forwardMove + horizontalMove);
+			anim.SetInteger("AnimationPar", 1);
+		}
 	}
 
 	public void Update() {
