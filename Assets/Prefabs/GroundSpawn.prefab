@@ -280,8 +280,8 @@ CapsuleCollider:
   m_Height: 5.8196263
   m_Direction: 1
   m_Center: {x: 0.037836492, y: 2.9017284, z: -0.0047776103}
---- !u!65 &5871684787797914572
-BoxCollider:
+--- !u!64 &1147784832016549408
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -290,9 +290,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 200.00005, y: 39.792736, z: 100.0664}
-  m_Center: {x: -4.5477577e-10, y: 18.863588, z: -0.030519493}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 4882698f19d48dd42af12117cea6f02b, type: 3}
 --- !u!136 &8822123498738046864
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -935,8 +936,8 @@ CapsuleCollider:
   m_Height: 5.8196263
   m_Direction: 1
   m_Center: {x: 0.037836492, y: 2.9017284, z: -0.0047776103}
---- !u!65 &8675664465023406941
-BoxCollider:
+--- !u!64 &8312740857794000250
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -945,9 +946,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 200.00009, y: 39.79274, z: 74.84593}
-  m_Center: {x: 0.00000016112259, y: 18.864252, z: -12.64113}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 4882698f19d48dd42af12117cea6f02b, type: 3}
 --- !u!136 &1489785261657348374
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1149,8 +1151,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 20, y: 20, z: 15}
-  m_Center: {x: 0, y: 0, z: 7}
+  m_Size: {x: 20, y: 20, z: 250}
+  m_Center: {x: 0, y: 0, z: 80}
 --- !u!114 &4100998867970998605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8187,7 +8189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4882698f19d48dd42af12117cea6f02b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.54
+      value: -10.6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4882698f19d48dd42af12117cea6f02b, type: 3}
       propertyPath: m_LocalPosition.y

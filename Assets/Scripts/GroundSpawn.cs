@@ -12,11 +12,8 @@ public class GroundSpawn : MonoBehaviour
 	int obstaclesAdded = 0;
 
 	public void SpawnGround(){
-		Debug.Log("Spawn Tile");
-		Debug.Log(transform.position);
 		nextSpawnPoint = transform.position;
 		nextSpawnPoint.z = transform.position.z + 200;
-		Debug.Log(nextSpawnPoint);
 		Instantiate(ground,nextSpawnPoint, Quaternion.identity);
 	}
 
